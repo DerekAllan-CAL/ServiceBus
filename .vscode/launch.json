@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ServiceBus Api",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/ServiceBus.api/bin/Debug/net9.0/ServiceBus.api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ServiceBus.api/bin/Debug/net9.0",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": "ServiceBus Console",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/ServiceBus.Console/bin/Debug/net9.0/ServiceBus.Console.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ServiceBus.Console/bin/Debug/net9.0",
+            "stopAtEntry": false,
+            "console": "externalTerminal"
+        }
+    ]
+}
