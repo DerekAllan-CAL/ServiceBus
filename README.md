@@ -25,6 +25,11 @@ public class MyMessageHandler : MessageHandlerBase<MyMessage>
 Register your handler in the DI container, typically in `Startup.cs` or your service configuration:
 
 ```csharp
+builder.Services.AddAzureClients(b =>
+{
+    b.AddServiceBusClient(builder.Configuration.GetConnectionString("ServiceBus"));
+});
+
 services.AddTransient<IMessageHandler, MyMessageHandler>();
 services.AddHostedService<MessageProcessorService>();
 ```
